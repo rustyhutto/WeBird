@@ -1,0 +1,8 @@
+<%= @user.email %>
+
+<ul>  
+  <% @checklists.each do |checklist| %>
+    <li><%= checklist.location %></li>
+    <li><%= checklist.date %></li>
+  <% end %>
+</ul>
