@@ -1,0 +1,10 @@
+<%= @user.email %>
+
+<ul>  
+  <% @checklists.each do |checklist| %>
+    <li><%= checklist.location %></li>
+    <li><%= checklist.date %></li>
+  <% end %>
+</ul>
+
+<%= link_to "Log out", logout_path, method: "delete" %>
