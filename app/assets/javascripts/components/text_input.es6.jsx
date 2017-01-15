@@ -1,13 +1,17 @@
 class TextInput extends React.Component {
   render () {
     return (
-      <div>
-        <div>Name: {this.props.name}</div>
-        <div>Label: {this.props.label}</div>
-        <div>On Change: {this.props.onChange}</div>
-        <div>Placeholder: {this.props.placeholder}</div>
-        <div>Value: {this.props.value}</div>
-        <div>Type: {this.props.type}</div>
+      <div className="center">
+        <label htmlFor={this.props.name}>{this.props.label}</label>
+        <div className="field">
+          <input
+            type={this.props.type}
+            name={this.props.name}
+            className="form-control"
+            placeholder={this.props.placeholder}
+            value={this.props.value}
+            onChange={this.props.onChange}/>
+        </div>
       </div>
     );
   }
