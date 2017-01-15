@@ -12,7 +12,7 @@ class Api::V1::UsersController < Api::V1::BaseController
   def create
     @user = User.new(user_params)
     if @user.save
-      redirect_to @user
+      respond_with @user, json: @user.id
     else
       render 'new'
     end
