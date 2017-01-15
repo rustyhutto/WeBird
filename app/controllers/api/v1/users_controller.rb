@@ -1,7 +1,6 @@
-class UsersController < ApplicationController
+class Api::V1::UsersController < Api::V1::BaseController
 
   def show
-    p 'non-API controller'
     @user = User.find(params[:id])
     @checklists = Checklist.includes(:users).where(users: { id: @user.id })
   end

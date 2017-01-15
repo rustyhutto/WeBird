@@ -16,6 +16,15 @@ class Login extends React.Component {
 
   onSave(event) {
     event.preventDefault();
+    var credentials = this.state.credentials
+    $.ajax({
+      url: '/api/v1/sessions',
+      type: 'POST',
+      data: { session: credentials },
+      success: (id) => {
+        window.location.href = `users/${id}`
+      }
+    });
   }
 
   render () {
