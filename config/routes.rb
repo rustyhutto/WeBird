@@ -8,6 +8,14 @@ Rails.application.routes.draw do
 
   resources :users
   devise_for :users
-  
+
+  namespace :api do
+    namespace :v1 do
+      resources :checklists, only: [:index, :create, :destroy, :update]
+      resources :users, only: [:index, :create, :destroy, :update]
+      resources :sessions, only: [:index, :create, :destroy, :update]
+    end
+  end
+
 
 end
