@@ -51,26 +51,11 @@ var UserData = React.createClass({
                   </table>
                 </div>
                 <div className="tab-pane" id="b">
-                  <h3>Whats your Favorite?</h3>
-                  <ul className="list-group pull-left">
-                    <li className="list-group-item">
-                      <h4>Crystals &nbsp; &nbsp;<span className="badge pull-right">100%</span></h4>
-                    </li>
-                    <li className="list-group-item">
-                      <h4>Healing &nbsp; &nbsp;<span className="badge pull-right">90%</span></h4>
-                    </li>
-                    <li className="list-group-item">
-                      <h4>Exploring &nbsp; &nbsp;<span className="badge pull-right">78%</span></h4>
-                    </li>
-                    <li className="list-group-item">
-                      <h4>QiGong &nbsp; &nbsp;<span className="badge pull-right">83%</span></h4>
-                    </li>
-                    <li className="list-group-item">
-                      <h4>Myself &nbsp; &nbsp;<span className="badge pull-right">100%</span>
-                      </h4></li>
-                  </ul>
+                  <h3>Wishlist</h3>
                 </div>
-                <div className="tab-pane" id="c">CCCCThirdamuno, ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt condimentum vitae.</div>
+                <div className="tab-pane" id="c">
+                  <h3>Friends</h3>
+                </div>
               </div>
             </div>
           </div>

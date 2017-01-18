@@ -5,7 +5,7 @@ class UserShow extends React.Component {
         <div className='row'>
           <div className='col-md-4'>
             <div className='profile-col user-profile'>
-              <div className='prof-pic'>
+              <div className='profile-pic'>
                 Picture
               </div>
               <div className='user-info'>
