@@ -30,7 +30,6 @@ var UserData = React.createClass({
                 <li className="active"><a href="#a" data-toggle="tab">Checklists</a></li>
                 <li><a href="#b" data-toggle="tab">Wishlists</a></li>
                 <li><a href="#c" data-toggle="tab">Friends</a></li>
-
               </ul>
               <div className="tab-content">
                 <div className="tab-pane active" id="a">
