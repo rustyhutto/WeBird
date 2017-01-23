@@ -30,33 +30,32 @@ class Signup extends React.Component {
 
   render () {
     return (
-      < div className="row">
-        <div className="col-md-6 col-md-offset-3">
-          < form>
-
+      <div className="row center">
+        <div className="signup-form">
+          <form>
             < TextInput
               name="username"
-              label="username"
+              label="Username"
               type="username"
               value={this.state.credentials.username}
               onChange={this.onChange}/>
 
             < TextInput
               name="email"
-              label="email"
+              label="Email"
               value={this.state.credentials.email}
               onChange={this.onChange}/>
 
             < TextInput
               name="password"
-              label="password"
+              label="Password"
               type="password"
               value={this.state.credentials.password}
               onChange={this.onChange}/>
 
             < input
               type="submit"
-              className="btn btn-primary"
+              className="signup-submit btn btn-primary"
               onClick={this.onSave}/>
           </form>
         </div>

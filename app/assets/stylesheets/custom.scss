@@ -1,3 +1,30 @@
+// sign up page styling 
+.signup {
+    border: 1px solid #cccccc;
+    border-radius: 20px;
+    width: 40%;
+    margin: 0 auto;
+    background-color: #d1d1d1;
+    padding-top: 10px;
+}
+
+.signup-form {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.signup-submit {
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.title {
+    color: white;
+    background-color: #337AB7;
+    padding: 10px;
+}
+
 // user profile styling
 .profile-col {
     height: 500px;
@@ -64,6 +91,10 @@
 }
 
 // text styling
+.center {
+    text-align: center;
+}
+
 h3 {
     margin-top: 0;
 }
