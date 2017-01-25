@@ -47,6 +47,7 @@ var UserData = React.createClass({
                         <tr key={checklist.id}>
                           <td>{checklist.location}</td>
                           <td>{checklist.date}</td>
+                          <td><a href={`/checklists/${checklist.id}`}>View</a></td>
                         </tr>
                        )
                     })}
