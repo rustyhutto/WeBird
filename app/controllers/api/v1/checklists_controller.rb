@@ -1,8 +1,8 @@
 class Api::V1::ChecklistsController < Api::V1::BaseController
-  def index
-    @user = User.find(params[:id])
-    @checklists = Checklist.includes(:users).where(users: {id: @user.id})
-    respond_with @checklists
+  def show
+    @checklist = Checklist.find(params[:id])
+    @birds = Bird.where(checklist_id: @checklist.id)
+    respond_with @birds
   end
 
   def create
